@@ -291,3 +291,29 @@ int ControlParques::contarTipos(){
 unsigned int ControlParques::numArboles() const {
     return trees.size();
 }
+
+vector<Parque*> ControlParques::listarParquesArbol(const string& ncomun){
+    set<Parque*> parquesUnicos;
+    multimap<string, Arbol*>::iterator it = treeName.lower_bound(ncomun);
+    multimap<string, Arbol*>::iterator fin = treeName.upper_bound(ncomun);
+    while(it!=fin){
+        Parque* paux=it->second->getParque();
+        if(paux!=nullptr){
+            parquesUnicos.insert(paux);
+        } 
+        
+        it++;
+    }
+    return vector<Parque*>(parquesUnicos.begin(), parquesUnicos.end());
+}
+
+vector<Arbol*> ControlParques::buscarArbolNcomun(const string& ncomun){
+    vector<Arbol*> resultados;
+    multimap<string, Arbol*>::iterator it = treeName.lower_bound(ncomun);
+    multimap<string, Arbol*>::iterator fin= treeName.upper_bound(ncomun);
+    while(it != fin){
+        resultados.push_back(it->second);
+        it++;
+    }
+    return resultados;
+}

@@ -10,8 +10,8 @@
 #include <map>
 #include <vector>
 
-#include "header/ControlParques.h"
-#include "header/Arbol.h"
+#include "ControlParques.h"
+#include "Arbol.h"
 using namespace std;
 
 //Rutas de los archivos

@@ -126,6 +126,22 @@ public:
      * @return const list<Parque>& Lista Doblemente Enlazada con todos los parques
      */
     const list<Parque>& get_nbre_parque() const;
+    /**
+     * @brief devuelve un conjunto de parques que tienen al menos
+        un ejemplar del árbol dado por parámetro mediante su nombre común
+     * 
+     * @param ncomun nombre comun del arbol 
+     * @return vector<Parque> conjunto de parques que tiene al menos un ejemplar del árbol dado
+     */
+    vector<Parque*> listarParquesArbol(const string& ncomun);
+    /**
+     * @brief localiza en tiempo óptimo todos los ejemplares de
+        árboles con ese nombre común exacto
+     * 
+     * @param ncomun nombre comun del arbol 
+     * @return vector<Arbol*> 
+     */
+    vector<Arbol*> buscarArbolNcomun(const string& ncomun);
 };
 
 #endif
