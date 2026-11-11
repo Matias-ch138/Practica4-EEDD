@@ -6,6 +6,9 @@
 #include <sstream>
 #include <stdexcept>
 #include <string>
+#include <list> 
+#include <map>
+#include <vector>
 
 #include "header/ControlParques.h"
 #include "header/Arbol.h"
