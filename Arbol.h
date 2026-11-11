@@ -5,9 +5,7 @@
 #include <string>
 #include "Especie.h"
 #include "Parque.h"
-
 using namespace std;
-
 class Arbol {
 private:
     string assetnum_;

@@ -326,3 +326,11 @@ vector<Arbol*> ControlParques::buscarArbolNcomunComienzo(const string& ncomun){
     }
 }
 
+int ControlParques::contarArbolesBarrio(int num_barrio){
+    multimap<string,Arbol>::iterator it=trees.begin();
+    int contador=0;
+    while(it!=trees.end()&&it->second.get_num_barrio()==num_barrio){
+        contador++;
+    }
+    return contador;
+}

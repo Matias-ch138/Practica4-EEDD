@@ -3,13 +3,11 @@
 
 #include <iostream>
 #include <string>
-#include "Especie.h"
 #include <vector>
 #include <set>
 #include <map>
 #include "Arbol.h"
 using namespace std;
-
 //TODO: Revisar metodos realmente necesarios
 class Parque { 
 private:

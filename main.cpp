@@ -29,7 +29,7 @@ int main() {
         std::cout << "\nEJERCICIO 1: BUSCAR VARIOS ID\n";
         string identificadores[] = {"6951831", "10152826", "8887777", "6906686"};
         for (string id: identificadores) {
-            auto arbol = control.buscarArbolAssetnum(id);
+            auto arbol = control.buscarArbol(id);
             if (arbol == nullptr) {
                 cout << "\t" << id << " no encontrado" << endl << endl;
                 continue;
