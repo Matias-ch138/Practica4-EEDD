@@ -294,43 +294,57 @@ unsigned int ControlParques::numArboles() const {
 
 vector<Parque*> ControlParques::listarParquesArbol(const string& ncomun){
     set<Parque*> parquesUnicos;
-    multimap<string, Arbol*>::iterator it = treeName.lower_bound(ncomun);
-    multimap<string, Arbol*>::iterator fin = treeName.upper_bound(ncomun);
-    while(it!=fin){
-        Parque* paux=it->second->getParque();
+    pair<multimap<string, Arbol*>::iterator, multimap<string, Arbol*>::iterator> pareja = treeName.equal_range(ncomun); 
+    while(pareja.first!=pareja.second){
+        Parque* paux=pareja.first->second->getParque();
         if(paux!=nullptr){
             parquesUnicos.insert(paux);
-        } 
+        }
         
-        it++;
+        pareja.first++;
     }
     return vector<Parque*>(parquesUnicos.begin(), parquesUnicos.end());
 }
 
 vector<Arbol*> ControlParques::buscarArbolNcomun(const string& ncomun){
     vector<Arbol*> resultados;
+    pair<multimap<string, Arbol*>::iterator, multimap<string, Arbol*>::iterator> pareja = treeName.equal_range(ncomun); 
+    while(pareja.first!=pareja.second){
+        resultados.push_back(pareja.first->second);
+        pareja.first++;
+    }
+    return resultados;
+}
+
+vector<Arbol*> ControlParques::buscarArbolNcomunComienzo(const string& ncomun){
     multimap<string,Arbol*>::iterator it = treeName.lower_bound(ncomun);
-    while(it != treeName.end()&&it->first==ncomun){
+    vector<Arbol*> resultados;
+    while(it!=treeName.end()&&it->first.find(ncomun)==0){
         resultados.push_back(it->second);
         it++;
     }
     return resultados;
 }
 
-vector<Arbol*> ControlParques::buscarArbolNcomunComienzo(const string& ncomun){
-    pair<multimap<string,Arbol*>::iterator,multimap<string,Arbol*>::iterator> pareja = treeName.equal_range(ncomun);
+int ControlParques::contarArbolesBarrio(int num_barrio){
+    map<string,Arbol>::iterator it=trees.begin();
+    int contador=0;
+    while(it!=trees.end()){
+        if(it->second.get_num_barrio()==num_barrio){
+            contador++;
+        }
+        it++;
+    }
+    return contador;
+}
+
+vector<Arbol*> ControlParques::buscarArbolesPorEspecieYDistrito(const string& nbreComun, int numDistrito){
+    pair<multimap<string, Arbol*>::iterator, multimap<string, Arbol*>::iterator> pareja = treeName.equal_range(nbreComun);
     vector<Arbol*> resultados;
     while(pareja.first!=pareja.second){
+        if(pareja.first->second->get_num_distrito()==numDistrito)
         resultados.push_back(pareja.first->second);
         pareja.first++;
     }
-}
-
-int ControlParques::contarArbolesBarrio(int num_barrio){
-    multimap<string,Arbol>::iterator it=trees.begin();
-    int contador=0;
-    while(it!=trees.end()&&it->second.get_num_barrio()==num_barrio){
-        contador++;
-    }
-    return contador;
+return resultados;
 }

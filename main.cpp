@@ -34,7 +34,7 @@ int main() {
                 cout << "\t" << id << " no encontrado" << endl << endl;
                 continue;
             }
-            cout << "\t" << "identificador: " << arbol->getAssetnum() << endl;
+            cout << "\t" << "identificador: " << arbol->get_assetnum() << endl;
             cout << "\t" << "codigo de parque: " << arbol->getParque()->get_cod_parque() << endl;
             cout << "\t" << "nombre común: " << arbol->getEspecie()->get_nombre_comun() << endl;
             cout << "\t" << "nombre científico: " << arbol->getEspecie()->get_nombre_cientifico() << endl;
@@ -43,7 +43,7 @@ int main() {
         }
 
         cout << "\nEJERCICIO 2: ESPECIE MÁS COMÚN EN PARQUE PRINCESA LEONOR\n";
-        Especie *especieMasComun = control.especieMasComun("PARQUE PRINCESA LEONOR");
+        Especie *especieMasComun = control.buscarParque("PARQUE PRINCESA LEONOR")->especieMasComun();
         if (especieMasComun == nullptr) {
             cout << "\t" << "No se ha encontrado el parque" << endl;
         } else {
@@ -61,19 +61,21 @@ int main() {
 
         cout << "\nEJERCICIO 4: BUSCAR BUSCAR PINO RESINERO Y PINO\n";
         string unicoArbol = "Pino resinero";
-        Arbol *arbol = control.buscarArbolNcomun(unicoArbol);
-        if (arbol != nullptr) {
-            cout << "\tBuscar Pino resinero" << endl;
-            cout << "\t" << "identificador: " << arbol->getAssetnum() << endl;
-            cout << "\t" << "codigo de parque: " << arbol->getParque()->get_cod_parque() << endl;
-            cout << "\t" << "nombre común: " << arbol->getEspecie()->get_nombre_comun() << endl;
-            cout << "\t" << "nombre científico: " << arbol->getEspecie()->get_nombre_cientifico() << endl;
-            cout << "\t" << "tipo planta: " << arbol->getEspecie()->get_tipo_planta() << endl;
-            cout << endl;
-        } else {
-            cout << "\t" << "No se ha encontrado el árbol " << unicoArbol << endl;
+        vector<Arbol*> arboles = control.buscarArbolNcomun(unicoArbol);
+        for (size_t i = 0; i < arboles.size(); i++){
+            if (arboles[i] != nullptr) {
+                cout << "\tBuscar Pino resinero" << endl;
+                cout << "\t" << "identificador: " << arboles[i]->get_assetnum() << endl;
+                cout << "\t" << "codigo de parque: " << arboles[i]->getParque()->get_cod_parque() << endl;
+                cout << "\t" << "nombre común: " << arboles[i]->getEspecie()->get_nombre_comun() << endl;
+                cout << "\t" << "nombre científico: " << arboles[i]->getEspecie()->get_nombre_cientifico() << endl;
+                cout << "\t" << "tipo planta: " << arboles[i]->getEspecie()->get_tipo_planta() << endl;
+                cout << endl;
+            } else {
+                cout << "\t" << "No se ha encontrado el árbol " << unicoArbol << endl;
+            }
         }
-
+            
         vector<Arbol *> arbolesPino = control.buscarArbolNcomunComienzo("Pino");
         cout<<"\tPinos encontrado: "<<arbolesPino.size()<<endl;
 
@@ -88,8 +90,8 @@ int main() {
         vector<Arbol *> arbolesNombreDistrito = control.buscarArbolesPorEspecieYDistrito("Pino", 9);
         cout<<"Arboles encontrados: "<<arbolesNombreDistrito.size()<<endl;
         for (auto arbol: arbolesNombreDistrito) {
-            cout << "\t" << "assetnum: " << arbol->getAssetnum() << endl;
-            cout << "\t" << "nombre barrio: " << arbol->getnbrebarrio() << endl;
+            cout << "\t" << "assetnum: " << arbol->get_assetnum() << endl;
+            cout << "\t" << "nombre barrio: " << arbol->get_nbre_barrio() << endl;
             cout << "\t" << "parque: " << arbol->getParque()->get_nbre_parque() << endl;
             cout << endl;
         }

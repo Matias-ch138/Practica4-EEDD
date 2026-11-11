@@ -5,6 +5,7 @@
 #include <string>
 using namespace std;
 
+#include "Arbol.h"
 #include "Especie.h"
 #include "Parque.h"
 #include <list>
@@ -158,6 +159,15 @@ public:
      * @return int número de arboles en un barrio
      */
     int contarArbolesBarrio(int num_barrio);
+    /**
+     * @brief devuelve un listado de los árboles
+      de una especie dada por su nombre común y que pertenecen a un mismo distrito
+     * 
+     * @param nbreComun nombre común del arbol
+     * @param numDistrito número del distrito
+     * @return vector<Arbol*> vector con arboles del distrito @param numDistrito y nombre @param nbreComun
+     */
+    vector<Arbol*> buscarArbolesPorEspecieYDistrito(const string& nbreComun, int numDistrito);
 };
 
 #endif

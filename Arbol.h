@@ -4,8 +4,10 @@
 #include <iostream>
 #include <string>
 #include "Especie.h"
-#include "Parque.h"
 using namespace std;
+
+class Parque;
+
 class Arbol {
 private:
     string assetnum_;

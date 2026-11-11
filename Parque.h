@@ -8,6 +8,9 @@
 #include <map>
 #include "Arbol.h"
 using namespace std;
+
+class Especie;
+
 //TODO: Revisar metodos realmente necesarios
 class Parque { 
 private:
