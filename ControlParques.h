@@ -139,9 +139,25 @@ public:
         árboles con ese nombre común exacto
      * 
      * @param ncomun nombre comun del arbol 
-     * @return vector<Arbol*> 
+     * @return vector<Arbol*> todos los arboles con ese nombre comun exacto
      */
     vector<Arbol*> buscarArbolNcomun(const string& ncomun);
+    /**
+     * @brief localiza en tiempo óptimo todos los
+        ejemplares de árboles dando una palabra del comienzo
+     * 
+     * @param ncomun subcadena del nombre comun del arbol
+     * @return vector<Arbol*> todos los arboles con esa subcadena de nombre comun
+     */
+    vector<Arbol*> buscarArbolNcomunComienzo(const string& ncomun);
+    /**
+     * @brief devuelve el número de árboles que tiene un barrio
+        de Madrid dado su código
+     * 
+     * @param num_barrio numero del barrio
+     * @return int número de arboles en un barrio
+     */
+    int contarArbolesBarrio(int num_barrio);
 };
 
 #endif

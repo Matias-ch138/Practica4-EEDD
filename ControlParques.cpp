@@ -309,11 +309,20 @@ vector<Parque*> ControlParques::listarParquesArbol(const string& ncomun){
 
 vector<Arbol*> ControlParques::buscarArbolNcomun(const string& ncomun){
     vector<Arbol*> resultados;
-    multimap<string, Arbol*>::iterator it = treeName.lower_bound(ncomun);
-    multimap<string, Arbol*>::iterator fin= treeName.upper_bound(ncomun);
-    while(it != fin){
+    multimap<string,Arbol*>::iterator it = treeName.lower_bound(ncomun);
+    while(it != treeName.end()&&it->first==ncomun){
         resultados.push_back(it->second);
         it++;
     }
     return resultados;
 }
+
+vector<Arbol*> ControlParques::buscarArbolNcomunComienzo(const string& ncomun){
+    pair<multimap<string,Arbol*>::iterator,multimap<string,Arbol*>::iterator> pareja = treeName.equal_range(ncomun);
+    vector<Arbol*> resultados;
+    while(pareja.first!=pareja.second){
+        resultados.push_back(pareja.first->second);
+        pareja.first++;
+    }
+}
+
