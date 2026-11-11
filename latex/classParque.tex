@@ -1,0 +1,212 @@
+\doxysection{Parque Class Reference}
+\hypertarget{classParque}{}\label{classParque}\index{Parque@{Parque}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classParque_a5396e3e5a2bc91c02151f561a0450c0f}\label{classParque_a5396e3e5a2bc91c02151f561a0450c0f} 
+{\bfseries Parque} ()
+\begin{DoxyCompactList}\small\item\em Constructor por defecto de un \doxylink{classParque}{Parque}. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{classParque_a139183714ef1cab5b09311c97c37488a}{Parque}} (int cod, string nombre)
+\begin{DoxyCompactList}\small\item\em Constructor parametrizado de un \doxylink{classParque}{Parque}. \end{DoxyCompactList}\item 
+\Hypertarget{classParque_a6a5ec17e0d6160f6709071dc6269ab57}\label{classParque_a6a5ec17e0d6160f6709071dc6269ab57} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Parque} ()
+\begin{DoxyCompactList}\small\item\em Destructor de un \doxylink{classParque}{Parque}. \end{DoxyCompactList}\item 
+int \doxymbox{\hyperlink{classParque_a22cd7b056df8f4b1eba519c0c6991ba9}{get\+\_\+cod\+\_\+parque}} () const
+\begin{DoxyCompactList}\small\item\em obtener el codigo de un parque \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classParque_aec129faed41072a3ebafe8e6cce21f99}{set\+\_\+cod\+\_\+parque}} (int cod)
+\begin{DoxyCompactList}\small\item\em establecer el codigo de un parque \end{DoxyCompactList}\item 
+string \doxymbox{\hyperlink{classParque_aae41492b161da8d4954598a27e619bfd}{get\+\_\+nbre\+\_\+parque}} () const
+\begin{DoxyCompactList}\small\item\em obtener el nombre del parque \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classParque_a665761d2de3152cf6673771fe08b2986}{set\+\_\+nbre\+\_\+parque}} (string nombre)
+\begin{DoxyCompactList}\small\item\em establecer el nombre del parque \end{DoxyCompactList}\item 
+const vector$<$ \doxymbox{\hyperlink{classArbol}{Arbol}} \texorpdfstring{$\ast$}{*} $>$ \& \doxymbox{\hyperlink{classParque_a848eb2c94ede75412cadf8444ae1b489}{get\+\_\+contains}} () const
+\begin{DoxyCompactList}\small\item\em arboles de un parque \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{classParque_a6a931dd4193868cf157a02f8ac7fd922}{existe\+Nbre\+Com}} (string ncomun)
+\begin{DoxyCompactList}\small\item\em existe un nombre comun \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classParque_af8928e93f50fa300e4d0ca7f8751a30b}{insertar\+Arbol}} (\doxymbox{\hyperlink{classArbol}{Arbol}} \texorpdfstring{$\ast$}{*}arbol)
+\begin{DoxyCompactList}\small\item\em Inserta un arbol en un parque. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{classArbol}{Arbol}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classParque_ae4ff050289c424e3f680e327df43f376}{arbol\+Mas\+Alto}} ()
+\begin{DoxyCompactList}\small\item\em obtener el arbol mas alto del parque \end{DoxyCompactList}\item 
+int \doxymbox{\hyperlink{classParque_a684bb8459ff9ce9d2d23a07bd0d16e03}{contar\+Especies}} ()
+\begin{DoxyCompactList}\small\item\em Cuenta las especies únicas de un parque. \end{DoxyCompactList}\item 
+int \doxymbox{\hyperlink{classParque_a255b61432f2c5d3c5ce4ae97cea67ff8}{contar\+Tipos}} ()
+\begin{DoxyCompactList}\small\item\em cuenta los tipos únicos de un parque \end{DoxyCompactList}\item 
+\Hypertarget{classParque_a9af7577dbad76c71303966ae14a39573}\label{classParque_a9af7577dbad76c71303966ae14a39573} 
+\doxymbox{\hyperlink{classEspecie}{Especie}} \texorpdfstring{$\ast$}{*} {\bfseries especie\+Mas\+Comun} ()
+\end{DoxyCompactItemize}
+
+
+\label{classParque_doc-constructors}
+\Hypertarget{classParque_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classParque_a139183714ef1cab5b09311c97c37488a}\index{Parque@{Parque}!Parque@{Parque}}
+\index{Parque@{Parque}!Parque@{Parque}}
+\doxysubsubsection{\texorpdfstring{Parque()}{Parque()}}
+{\footnotesize\ttfamily \label{classParque_a139183714ef1cab5b09311c97c37488a} 
+Parque::\+\+Parque (\begin{DoxyParamCaption}\item[{int}]{cod}{, }\item[{string}]{nombre}{}\end{DoxyParamCaption})}
+
+
+
+Constructor parametrizado de un \doxylink{classParque}{Parque}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cod} & codigo del parque \\
+\hline
+{\em nombre} & nombre del parque \\
+\hline
+\end{DoxyParams}
+
+
+\label{classParque_doc-func-members}
+\Hypertarget{classParque_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classParque_ae4ff050289c424e3f680e327df43f376}\index{Parque@{Parque}!arbolMasAlto@{arbolMasAlto}}
+\index{arbolMasAlto@{arbolMasAlto}!Parque@{Parque}}
+\doxysubsubsection{\texorpdfstring{arbolMasAlto()}{arbolMasAlto()}}
+{\footnotesize\ttfamily \label{classParque_ae4ff050289c424e3f680e327df43f376} 
+\doxymbox{\hyperlink{classArbol}{Arbol}} \texorpdfstring{$\ast$}{*} Parque::\+arbol\+Mas\+Alto (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+obtener el arbol mas alto del parque 
+
+\begin{DoxyReturn}{Returns}
+Arbol\texorpdfstring{$\ast$}{*} puntero al arbol mas alto del parque 
+\end{DoxyReturn}
+\Hypertarget{classParque_a684bb8459ff9ce9d2d23a07bd0d16e03}\index{Parque@{Parque}!contarEspecies@{contarEspecies}}
+\index{contarEspecies@{contarEspecies}!Parque@{Parque}}
+\doxysubsubsection{\texorpdfstring{contarEspecies()}{contarEspecies()}}
+{\footnotesize\ttfamily \label{classParque_a684bb8459ff9ce9d2d23a07bd0d16e03} 
+int Parque::\+contar\+Especies (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Cuenta las especies únicas de un parque. 
+
+\begin{DoxyReturn}{Returns}
+int número de especies únicas del parque 
+\end{DoxyReturn}
+\Hypertarget{classParque_a255b61432f2c5d3c5ce4ae97cea67ff8}\index{Parque@{Parque}!contarTipos@{contarTipos}}
+\index{contarTipos@{contarTipos}!Parque@{Parque}}
+\doxysubsubsection{\texorpdfstring{contarTipos()}{contarTipos()}}
+{\footnotesize\ttfamily \label{classParque_a255b61432f2c5d3c5ce4ae97cea67ff8} 
+int Parque::\+contar\+Tipos (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+cuenta los tipos únicos de un parque 
+
+\begin{DoxyReturn}{Returns}
+int número de tipo únicos de un parque 
+\end{DoxyReturn}
+\Hypertarget{classParque_a6a931dd4193868cf157a02f8ac7fd922}\index{Parque@{Parque}!existeNbreCom@{existeNbreCom}}
+\index{existeNbreCom@{existeNbreCom}!Parque@{Parque}}
+\doxysubsubsection{\texorpdfstring{existeNbreCom()}{existeNbreCom()}}
+{\footnotesize\ttfamily \label{classParque_a6a931dd4193868cf157a02f8ac7fd922} 
+bool Parque::\+existe\+Nbre\+Com (\begin{DoxyParamCaption}\item[{string}]{ncomun}{}\end{DoxyParamCaption})}
+
+
+
+existe un nombre comun 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ncomun} & el nombre comun \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si existe 
+
+false si no existe 
+\end{DoxyReturn}
+\Hypertarget{classParque_a22cd7b056df8f4b1eba519c0c6991ba9}\index{Parque@{Parque}!get\_cod\_parque@{get\_cod\_parque}}
+\index{get\_cod\_parque@{get\_cod\_parque}!Parque@{Parque}}
+\doxysubsubsection{\texorpdfstring{get\_cod\_parque()}{get\_cod\_parque()}}
+{\footnotesize\ttfamily \label{classParque_a22cd7b056df8f4b1eba519c0c6991ba9} 
+int Parque::\+get\+\_\+cod\+\_\+parque (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+obtener el codigo de un parque 
+
+\begin{DoxyReturn}{Returns}
+int codigo obtenido del parque 
+\end{DoxyReturn}
+\Hypertarget{classParque_a848eb2c94ede75412cadf8444ae1b489}\index{Parque@{Parque}!get\_contains@{get\_contains}}
+\index{get\_contains@{get\_contains}!Parque@{Parque}}
+\doxysubsubsection{\texorpdfstring{get\_contains()}{get\_contains()}}
+{\footnotesize\ttfamily \label{classParque_a848eb2c94ede75412cadf8444ae1b489} 
+const vector$<$ \doxymbox{\hyperlink{classArbol}{Arbol}} \texorpdfstring{$\ast$}{*} $>$ \& Parque::\+get\+\_\+contains (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+arboles de un parque 
+
+\begin{DoxyReturn}{Returns}
+VDinamico$<$\+Arbol\texorpdfstring{$\ast$}{*}$>$ arboles obtenidas de un parque 
+\end{DoxyReturn}
+\Hypertarget{classParque_aae41492b161da8d4954598a27e619bfd}\index{Parque@{Parque}!get\_nbre\_parque@{get\_nbre\_parque}}
+\index{get\_nbre\_parque@{get\_nbre\_parque}!Parque@{Parque}}
+\doxysubsubsection{\texorpdfstring{get\_nbre\_parque()}{get\_nbre\_parque()}}
+{\footnotesize\ttfamily \label{classParque_aae41492b161da8d4954598a27e619bfd} 
+string Parque::\+get\+\_\+nbre\+\_\+parque (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+obtener el nombre del parque 
+
+\begin{DoxyReturn}{Returns}
+string nombre obtenido del parque 
+\end{DoxyReturn}
+\Hypertarget{classParque_af8928e93f50fa300e4d0ca7f8751a30b}\index{Parque@{Parque}!insertarArbol@{insertarArbol}}
+\index{insertarArbol@{insertarArbol}!Parque@{Parque}}
+\doxysubsubsection{\texorpdfstring{insertarArbol()}{insertarArbol()}}
+{\footnotesize\ttfamily \label{classParque_af8928e93f50fa300e4d0ca7f8751a30b} 
+void Parque::\+insertar\+Arbol (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classArbol}{Arbol}} \texorpdfstring{$\ast$}{*}}]{arbol}{}\end{DoxyParamCaption})}
+
+
+
+Inserta un arbol en un parque. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em arbol} & arbol que queremos insertar \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classParque_aec129faed41072a3ebafe8e6cce21f99}\index{Parque@{Parque}!set\_cod\_parque@{set\_cod\_parque}}
+\index{set\_cod\_parque@{set\_cod\_parque}!Parque@{Parque}}
+\doxysubsubsection{\texorpdfstring{set\_cod\_parque()}{set\_cod\_parque()}}
+{\footnotesize\ttfamily \label{classParque_aec129faed41072a3ebafe8e6cce21f99} 
+void Parque::\+set\+\_\+cod\+\_\+parque (\begin{DoxyParamCaption}\item[{int}]{cod}{}\end{DoxyParamCaption})}
+
+
+
+establecer el codigo de un parque 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cod} & codigo a establecer del parque \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classParque_a665761d2de3152cf6673771fe08b2986}\index{Parque@{Parque}!set\_nbre\_parque@{set\_nbre\_parque}}
+\index{set\_nbre\_parque@{set\_nbre\_parque}!Parque@{Parque}}
+\doxysubsubsection{\texorpdfstring{set\_nbre\_parque()}{set\_nbre\_parque()}}
+{\footnotesize\ttfamily \label{classParque_a665761d2de3152cf6673771fe08b2986} 
+void Parque::\+set\+\_\+nbre\+\_\+parque (\begin{DoxyParamCaption}\item[{string}]{nombre}{}\end{DoxyParamCaption})}
+
+
+
+establecer el nombre del parque 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nombre} & nombre a establecer del parque \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+Parque.\+h\item 
+Parque.\+cpp\end{DoxyCompactItemize}

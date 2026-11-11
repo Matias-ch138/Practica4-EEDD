@@ -86,7 +86,7 @@ int main() {
             cout << "\t" << "Total árboles barrio " << barrio << ": " << total << endl;
         }
 
-        cout << "\nEJERCICIO DE PAREJAS/OPCIONAL: BUSCAR ÁRBOLES POR NOMBRE Y BARRIO\n";
+        cout << "\nEJERCICIO DE PAREJAS/OPCIONAL: BUSCAR ÁRBOLES POR NOMBRE Y DISTRITO\n";
         vector<Arbol *> arbolesNombreDistrito = control.buscarArbolesPorEspecieYDistrito("Pino", 9);
         cout<<"Arboles encontrados: "<<arbolesNombreDistrito.size()<<endl;
         for (auto arbol: arbolesNombreDistrito) {
