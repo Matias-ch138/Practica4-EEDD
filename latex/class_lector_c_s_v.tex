@@ -1,0 +1,68 @@
+\doxysection{Lector\+CSV Class Reference}
+\hypertarget{class_lector_c_s_v}{}\label{class_lector_c_s_v}\index{LectorCSV@{LectorCSV}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \doxymbox{\hyperlink{class_lector_c_s_v_add995573234463e019a94597ff703fe8}{cargar}} (vector$<$ \doxymbox{\hyperlink{class_especie}{Especie}} $>$ \&vector, const std::\+string \&ruta\+Fichero)
+\begin{DoxyCompactList}\small\item\em Carga el fichero CSV indicado, mostrando cada especie por pantalla. \end{DoxyCompactList}\item 
+std::\+size\+\_\+t \doxymbox{\hyperlink{class_lector_c_s_v_a4b45068818af12582b08b82dcf3f94d4}{numero\+Especies}} () const
+\begin{DoxyCompactList}\small\item\em Número de especies leídas correctamente. \end{DoxyCompactList}\item 
+std::\+size\+\_\+t \doxymbox{\hyperlink{class_lector_c_s_v_a2d21b17b447540c6f6f0af740e2e71c1}{filas\+Descartadas}} () const
+\begin{DoxyCompactList}\small\item\em Número de filas descartadas por no tener el número de campos esperado. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_lector_c_s_v_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_lector_c_s_v_add995573234463e019a94597ff703fe8}\index{LectorCSV@{LectorCSV}!cargar@{cargar}}
+\index{cargar@{cargar}!LectorCSV@{LectorCSV}}
+\doxysubsubsection{\texorpdfstring{cargar()}{cargar()}}
+{\footnotesize\ttfamily \label{class_lector_c_s_v_add995573234463e019a94597ff703fe8} 
+bool Lector\+CSV::\+cargar (\begin{DoxyParamCaption}\item[{vector$<$ \doxymbox{\hyperlink{class_especie}{Especie}} $>$ \&}]{vector}{, }\item[{const std::\+string \&}]{ruta\+Fichero}{}\end{DoxyParamCaption})}
+
+
+
+Carga el fichero CSV indicado, mostrando cada especie por pantalla. 
+
+Cada línea se analiza y, si tiene el número de campos esperado, se construye una \doxylink{class_especie}{Especie} que se almacena en el VDinamico Las filas con un número de campos distinto del esperado se descartan (ver \doxylink{class_lector_c_s_v_a2d21b17b447540c6f6f0af740e2e71c1}{filas\+Descartadas()}).
+
+
+\begin{DoxyParams}{Parameters}
+{\em ruta\+Fichero} & Ruta del fichero CSV a leer. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si el fichero se ha podido abrir, false en caso contrario. 
+\end{DoxyReturn}
+\Hypertarget{class_lector_c_s_v_a2d21b17b447540c6f6f0af740e2e71c1}\index{LectorCSV@{LectorCSV}!filasDescartadas@{filasDescartadas}}
+\index{filasDescartadas@{filasDescartadas}!LectorCSV@{LectorCSV}}
+\doxysubsubsection{\texorpdfstring{filasDescartadas()}{filasDescartadas()}}
+{\footnotesize\ttfamily \label{class_lector_c_s_v_a2d21b17b447540c6f6f0af740e2e71c1} 
+std::\+size\+\_\+t Lector\+CSV::\+filas\+Descartadas (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Número de filas descartadas por no tener el número de campos esperado. 
+
+\begin{DoxyReturn}{Returns}
+Cantidad de filas descartadas durante la última llamada a \doxylink{class_lector_c_s_v_add995573234463e019a94597ff703fe8}{cargar()}. 
+\end{DoxyReturn}
+\Hypertarget{class_lector_c_s_v_a4b45068818af12582b08b82dcf3f94d4}\index{LectorCSV@{LectorCSV}!numeroEspecies@{numeroEspecies}}
+\index{numeroEspecies@{numeroEspecies}!LectorCSV@{LectorCSV}}
+\doxysubsubsection{\texorpdfstring{numeroEspecies()}{numeroEspecies()}}
+{\footnotesize\ttfamily \label{class_lector_c_s_v_a4b45068818af12582b08b82dcf3f94d4} 
+std::\+size\+\_\+t Lector\+CSV::\+numero\+Especies (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Número de especies leídas correctamente. 
+
+\begin{DoxyReturn}{Returns}
+Cantidad de especies mostradas durante la última llamada a \doxylink{class_lector_c_s_v_add995573234463e019a94597ff703fe8}{cargar()}. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files:\+\begin{DoxyCompactItemize}
+\item 
+Lector\+CSV.\+h\item 
+Lector\+CSV.\+cpp\end{DoxyCompactItemize}

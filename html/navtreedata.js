@@ -41,9 +41,9 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"Arbol_8h_source.html"
+"_arbol_8h_source.html"
 ];
 
-const SYNCONMSG = 'click to disable panel synchronization';
-const SYNCOFFMSG = 'click to enable panel synchronization';
-const LISTOFALLMEMBERS = 'List of all members';
+var SYNCONMSG = 'click to disable panel synchronization';
+var SYNCOFFMSG = 'click to enable panel synchronization';
+var LISTOFALLMEMBERS = 'List of all members';

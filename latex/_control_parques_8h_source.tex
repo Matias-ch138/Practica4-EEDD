@@ -1,0 +1,51 @@
+\doxysection{Control\+Parques.\+h}
+\hypertarget{_control_parques_8h_source}{}\label{_control_parques_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ CONTROLPARQUES\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ CONTROLPARQUES\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00006\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}Arbol.h"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}Especie.h"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}Parque.h"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <list>}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_control_parques_ac807c088f79a779c017cd23025680eec}{ControlParques}}\ \{}
+\DoxyCodeLine{00014\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00015\ \ \ \ \ vector<Especie>\ varieties;}
+\DoxyCodeLine{00016\ \ \ \ \ list<Parque>\ parks;}
+\DoxyCodeLine{00017\ \ \ \ \ map<string,\ Arbol>\ trees;\ \textcolor{comment}{//clave\ assetnum}}
+\DoxyCodeLine{00018\ \ \ \ \ multimap<string,\ Arbol*>\ treeName;\ \textcolor{comment}{//clave\ nombrecomun}}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00025\ \ \ \ \ \doxymbox{\hyperlink{class_control_parques_ac807c088f79a779c017cd23025680eec}{ControlParques}}();}
+\DoxyCodeLine{00033\ \ \ \ \ \doxymbox{\hyperlink{class_control_parques_ac807c088f79a779c017cd23025680eec}{ControlParques}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ rutaEspecies,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ rutaParques,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ rutaArboles);}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{class_control_parques_a18c5bcf98f5b1ad68d5ae44797650faf}{contarEspecieParque}}(\textcolor{keywordtype}{string}\ ncomun);}
+\DoxyCodeLine{00047\ \ \ \ \ vector<Especie>\ \doxymbox{\hyperlink{class_control_parques_a6f381d14f617ad0dd9e9b433a579186d}{listadoEspecieSubNbre}}(\textcolor{keywordtype}{string}\ cadena);}
+\DoxyCodeLine{00054\ \ \ \ \ \doxymbox{\hyperlink{class_parque}{Parque}}*\ \doxymbox{\hyperlink{class_control_parques_a7629b4ea1b15f1404dd67015e89bf5d3}{buscarParque}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ nbre\_parque);}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00062\ \ \ \ \ \doxymbox{\hyperlink{class_arbol}{Arbol}}*\ \doxymbox{\hyperlink{class_control_parques_a8465eb0098c58e6b5bfb59448809051c}{buscarArbol}}(\textcolor{keywordtype}{string}\ asNum);}
+\DoxyCodeLine{00069\ \ \ \ \ vector<Arbol*>\ \doxymbox{\hyperlink{class_control_parques_a9fbdf02897c8f4ab07921ada19f7988f}{listaArbParque}}(\textcolor{keywordtype}{string}\ nbre\_parque);}
+\DoxyCodeLine{00075\ \ \ \ \ \doxymbox{\hyperlink{class_arbol}{Arbol}}*\ \doxymbox{\hyperlink{class_control_parques_a7c62f4b31857a1cb9ccd2377204abce5}{arbolMasAlto}}();}
+\DoxyCodeLine{00082\ \ \ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{class_control_parques_a1d013a26c8fbc69cae19ff082490c69d}{contarEspecies}}(\textcolor{keywordtype}{string}\ nbre\_parque);}
+\DoxyCodeLine{00088\ \ \ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{class_control_parques_a2b15ff83f74fb2674506ae926f052425}{contarTipos}}();}
+\DoxyCodeLine{00093\ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{class_control_parques_af2a1719000770d27c23e34f1da189949}{numArboles}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00099\ \ \ \ \ vector<Especie>\&\ \doxymbox{\hyperlink{class_control_parques_a6e6cd775746cbd3f4d8e3c6591989cee}{get\_varieties}}();}
+\DoxyCodeLine{00105\ \ \ \ \ \textcolor{keyword}{const}\ vector<Especie>\&\ \doxymbox{\hyperlink{class_control_parques_a6e6cd775746cbd3f4d8e3c6591989cee}{get\_varieties}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00111\ \ \ \ \ list<Parque>\&\ \doxymbox{\hyperlink{class_control_parques_ac825ba8f5891f0ff61906a8b1953e9e8}{get\_parks}}();}
+\DoxyCodeLine{00117\ \ \ \ \ \textcolor{keyword}{const}\ list<Parque>\&\ \doxymbox{\hyperlink{class_control_parques_ac825ba8f5891f0ff61906a8b1953e9e8}{get\_parks}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00123\ \ \ \ \ list<Parque>\&\ \doxymbox{\hyperlink{class_control_parques_ad9e42958eb763c97d06d8377051837fd}{get\_nbre\_parque}}();}
+\DoxyCodeLine{00129\ \ \ \ \ \textcolor{keyword}{const}\ list<Parque>\&\ \doxymbox{\hyperlink{class_control_parques_ad9e42958eb763c97d06d8377051837fd}{get\_nbre\_parque}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00137\ \ \ \ \ vector<Parque*>\ \doxymbox{\hyperlink{class_control_parques_a3404dbc25702cddf14b84c026761ddd4}{listarParquesArbol}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ ncomun);}
+\DoxyCodeLine{00145\ \ \ \ \ vector<Arbol*>\ \doxymbox{\hyperlink{class_control_parques_a20d01d61b02dc4c6db0a1f3cc570d0f9}{buscarArbolNcomun}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ ncomun);}
+\DoxyCodeLine{00153\ \ \ \ \ vector<Arbol*>\ \doxymbox{\hyperlink{class_control_parques_a638f6e756578e865b51ceb46e843b04c}{buscarArbolNcomunComienzo}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ ncomun);}
+\DoxyCodeLine{00161\ \ \ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{class_control_parques_ae5b87651e63c93551c4b2892d69140bc}{contarArbolesBarrio}}(\textcolor{keywordtype}{int}\ num\_barrio);}
+\DoxyCodeLine{00170\ \ \ \ \ vector<Arbol*>\ \doxymbox{\hyperlink{class_control_parques_af2e660edc577c440cdb94fab7c454856}{buscarArbolesPorEspecieYDistrito}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ nbreComun,\ \textcolor{keywordtype}{int}\ numDistrito);}
+\DoxyCodeLine{00171\ \};}
+\DoxyCodeLine{00172\ }
+\DoxyCodeLine{00173\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

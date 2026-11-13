@@ -1,0 +1,40 @@
+\doxysection{Lector\+CSV.\+h}
+\hypertarget{_lector_c_s_v_8h_source}{}\label{_lector_c_s_v_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ LECTOR\_CSV\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ LECTOR\_CSV\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <cstddef>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}Especie.h"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{comment}{//\ Lee\ el\ fichero\ data/arbolado-\/especies.csv:\ valores\ separados\ por\ comas,}}
+\DoxyCodeLine{00011\ \textcolor{comment}{//\ donde\ un\ valor\ puede\ ir\ entrecomillado\ y\ contener\ comas\ y\ comillas}}
+\DoxyCodeLine{00012\ \textcolor{comment}{//\ escapadas\ ("{}"{})\ dentro\ de\ las\ comillas\ (formato\ tipo\ RFC4180).\ Asume\ que}}
+\DoxyCodeLine{00013\ \textcolor{comment}{//\ cada\ fila\ lógica\ ocupa\ una\ única\ línea\ física\ del\ fichero.}}
+\DoxyCodeLine{00014\ \textcolor{comment}{//}}
+\DoxyCodeLine{00015\ \textcolor{comment}{//\ No\ almacena\ las\ especies\ leídas:\ cada\ una\ se\ construye\ y\ se\ muestra\ por}}
+\DoxyCodeLine{00016\ \textcolor{comment}{//\ pantalla\ en\ el\ momento\ en\ que\ se\ lee,\ y\ se\ descarta\ a\ continuación.\ No}}
+\DoxyCodeLine{00017\ \textcolor{comment}{//\ utiliza\ std::vector\ ni\ ninguna\ otra\ estructura\ de\ datos\ en\ ningún\ punto.}}
+\DoxyCodeLine{00018\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_lector_c_s_v}{LectorCSV}}\ \{}
+\DoxyCodeLine{00019\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_lector_c_s_v_add995573234463e019a94597ff703fe8}{cargar}}(vector<Especie>\ \&vector,\ \textcolor{keyword}{const}\ std::string\&\ rutaFichero);}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \ \ \ \ std::size\_t\ \doxymbox{\hyperlink{class_lector_c_s_v_a4b45068818af12582b08b82dcf3f94d4}{numeroEspecies}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00023\ \ \ \ \ std::size\_t\ \doxymbox{\hyperlink{class_lector_c_s_v_a2d21b17b447540c6f6f0af740e2e71c1}{filasDescartadas}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00026\ \ \ \ \ std::size\_t\ numeroEspecies\_\ =\ 0;}
+\DoxyCodeLine{00027\ \ \ \ \ std::size\_t\ filasDescartadas\_\ =\ 0;}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keyword}{static}\ std::size\_t\ contarCampos(\textcolor{keyword}{const}\ std::string\&\ linea);}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keyword}{static}\ std::string\ extraerCampo(\textcolor{keyword}{const}\ std::string\&\ linea,\ std::size\_t\ indiceObjetivo);}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ eliminarBOM(std::string\&\ linea);}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ mostrarEspecie(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_especie}{Especie}}\&\ especie);}
+\DoxyCodeLine{00033\ \};}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ LECTOR\_CSV\_H}}
+
+\end{DoxyCode}

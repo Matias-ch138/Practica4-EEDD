@@ -1,0 +1,431 @@
+\doxysection{Control\+Parques Class Reference}
+\hypertarget{class_control_parques}{}\label{class_control_parques}\index{ControlParques@{ControlParques}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_control_parques_ac807c088f79a779c017cd23025680eec}\label{class_control_parques_ac807c088f79a779c017cd23025680eec} 
+{\bfseries Control\+Parques} ()
+\begin{DoxyCompactList}\small\item\em Constructor por defecto de la clase \doxylink{class_control_parques}{Control\+Parques}. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{class_control_parques_a01f31450c408d9a369f23254239d2b7f}{Control\+Parques}} (const string \&ruta\+Especies, const string \&ruta\+Parques, const string \&ruta\+Arboles)
+\begin{DoxyCompactList}\small\item\em Constructor parametrizado de la clase \doxylink{class_control_parques}{Control\+Parques}. \end{DoxyCompactList}\item 
+int \doxymbox{\hyperlink{class_control_parques_a18c5bcf98f5b1ad68d5ae44797650faf}{contar\+Especie\+Parque}} (string ncomun)
+\begin{DoxyCompactList}\small\item\em Cuenta el número de especies que hay en todos los parques dado un nombre comun. \end{DoxyCompactList}\item 
+vector$<$ \doxymbox{\hyperlink{class_especie}{Especie}} $>$ \doxymbox{\hyperlink{class_control_parques_a6f381d14f617ad0dd9e9b433a579186d}{listado\+Especie\+Sub\+Nbre}} (string cadena)
+\begin{DoxyCompactList}\small\item\em Genera un vector de todas las especies con un subnombre especifico. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{class_parque}{Parque}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{class_control_parques_a7629b4ea1b15f1404dd67015e89bf5d3}{buscar\+Parque}} (const string \&nbre\+\_\+parque)
+\begin{DoxyCompactList}\small\item\em Busqueda de un parque dado su nombre. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{class_arbol}{Arbol}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{class_control_parques_a8465eb0098c58e6b5bfb59448809051c}{buscar\+Arbol}} (string as\+Num)
+\begin{DoxyCompactList}\small\item\em Busqueda de un arbol dado su. \end{DoxyCompactList}\item 
+vector$<$ \doxymbox{\hyperlink{class_arbol}{Arbol}} \texorpdfstring{$\ast$}{*} $>$ \doxymbox{\hyperlink{class_control_parques_a9fbdf02897c8f4ab07921ada19f7988f}{lista\+Arb\+Parque}} (string nbre\+\_\+parque)
+\begin{DoxyCompactList}\small\item\em Dado un nombre de un parque genera un vector con todos los arboles que tiene. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{class_arbol}{Arbol}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{class_control_parques_a7c62f4b31857a1cb9ccd2377204abce5}{arbol\+Mas\+Alto}} ()
+\begin{DoxyCompactList}\small\item\em Nos da el arbol mas alto de todos los parques. \end{DoxyCompactList}\item 
+int \doxymbox{\hyperlink{class_control_parques_a1d013a26c8fbc69cae19ff082490c69d}{contar\+Especies}} (string nbre\+\_\+parque)
+\begin{DoxyCompactList}\small\item\em Segun el nombre del parque cuenta las especies distintas que tiene. \end{DoxyCompactList}\item 
+int \doxymbox{\hyperlink{class_control_parques_a2b15ff83f74fb2674506ae926f052425}{contar\+Tipos}} ()
+\begin{DoxyCompactList}\small\item\em Cuenta todos los tipos de especies diferentes alojados en todos los parques. \end{DoxyCompactList}\item 
+unsigned int \doxymbox{\hyperlink{class_control_parques_af2a1719000770d27c23e34f1da189949}{num\+Arboles}} () const
+\begin{DoxyCompactList}\small\item\em Devuelve el número de árboles almacenados en el AVL. \end{DoxyCompactList}\item 
+vector$<$ \doxymbox{\hyperlink{class_especie}{Especie}} $>$ \& \doxymbox{\hyperlink{class_control_parques_a6e6cd775746cbd3f4d8e3c6591989cee}{get\+\_\+varieties}} ()
+\begin{DoxyCompactList}\small\item\em obtener las especies de todos los parques \end{DoxyCompactList}\item 
+const vector$<$ \doxymbox{\hyperlink{class_especie}{Especie}} $>$ \& \doxymbox{\hyperlink{class_control_parques_add36b9ae7693e6bf9ea1ab72bd665af2}{get\+\_\+varieties}} () const
+\begin{DoxyCompactList}\small\item\em obtener las especies de todos los parques \end{DoxyCompactList}\item 
+list$<$ \doxymbox{\hyperlink{class_parque}{Parque}} $>$ \& \doxymbox{\hyperlink{class_control_parques_ac825ba8f5891f0ff61906a8b1953e9e8}{get\+\_\+parks}} ()
+\begin{DoxyCompactList}\small\item\em obtener todos los parques \end{DoxyCompactList}\item 
+const list$<$ \doxymbox{\hyperlink{class_parque}{Parque}} $>$ \& \doxymbox{\hyperlink{class_control_parques_a69d9aa2d698c83bfb8ad4457204e9eeb}{get\+\_\+parks}} () const
+\begin{DoxyCompactList}\small\item\em obtener todos los parques \end{DoxyCompactList}\item 
+list$<$ \doxymbox{\hyperlink{class_parque}{Parque}} $>$ \& \doxymbox{\hyperlink{class_control_parques_ad9e42958eb763c97d06d8377051837fd}{get\+\_\+nbre\+\_\+parque}} ()
+\begin{DoxyCompactList}\small\item\em obtner todos los parques \end{DoxyCompactList}\item 
+const list$<$ \doxymbox{\hyperlink{class_parque}{Parque}} $>$ \& \doxymbox{\hyperlink{class_control_parques_a05918c5919dd8633d76df853db38973e}{get\+\_\+nbre\+\_\+parque}} () const
+\begin{DoxyCompactList}\small\item\em obtner todos los parques \end{DoxyCompactList}\item 
+vector$<$ \doxymbox{\hyperlink{class_parque}{Parque}} \texorpdfstring{$\ast$}{*} $>$ \doxymbox{\hyperlink{class_control_parques_a3404dbc25702cddf14b84c026761ddd4}{listar\+Parques\+Arbol}} (const string \&ncomun)
+\begin{DoxyCompactList}\small\item\em devuelve un conjunto de parques que tienen al menos un ejemplar del árbol dado por parámetro mediante su nombre común \end{DoxyCompactList}\item 
+vector$<$ \doxymbox{\hyperlink{class_arbol}{Arbol}} \texorpdfstring{$\ast$}{*} $>$ \doxymbox{\hyperlink{class_control_parques_a20d01d61b02dc4c6db0a1f3cc570d0f9}{buscar\+Arbol\+Ncomun}} (const string \&ncomun)
+\begin{DoxyCompactList}\small\item\em localiza en tiempo óptimo todos los ejemplares de árboles con ese nombre común exacto \end{DoxyCompactList}\item 
+vector$<$ \doxymbox{\hyperlink{class_arbol}{Arbol}} \texorpdfstring{$\ast$}{*} $>$ \doxymbox{\hyperlink{class_control_parques_a638f6e756578e865b51ceb46e843b04c}{buscar\+Arbol\+Ncomun\+Comienzo}} (const string \&ncomun)
+\begin{DoxyCompactList}\small\item\em localiza en tiempo óptimo todos los ejemplares de árboles dando una palabra del comienzo \end{DoxyCompactList}\item 
+int \doxymbox{\hyperlink{class_control_parques_ae5b87651e63c93551c4b2892d69140bc}{contar\+Arboles\+Barrio}} (int num\+\_\+barrio)
+\begin{DoxyCompactList}\small\item\em devuelve el número de árboles que tiene un barrio de Madrid dado su código \end{DoxyCompactList}\item 
+vector$<$ \doxymbox{\hyperlink{class_arbol}{Arbol}} \texorpdfstring{$\ast$}{*} $>$ \doxymbox{\hyperlink{class_control_parques_af2e660edc577c440cdb94fab7c454856}{buscar\+Arboles\+Por\+Especie\+YDistrito}} (const string \&nbre\+Comun, int num\+Distrito)
+\begin{DoxyCompactList}\small\item\em devuelve un listado de los árboles de una especie dada por su nombre común y que pertenecen a un mismo distrito \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_control_parques_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_control_parques_a01f31450c408d9a369f23254239d2b7f}\index{ControlParques@{ControlParques}!ControlParques@{ControlParques}}
+\index{ControlParques@{ControlParques}!ControlParques@{ControlParques}}
+\doxysubsubsection{\texorpdfstring{ControlParques()}{ControlParques()}}
+{\footnotesize\ttfamily \label{class_control_parques_a01f31450c408d9a369f23254239d2b7f} 
+Control\+Parques::\+\+Control\+Parques (\begin{DoxyParamCaption}\item[{const string \&}]{ruta\+Especies}{, }\item[{const string \&}]{ruta\+Parques}{, }\item[{const string \&}]{ruta\+Arboles}{}\end{DoxyParamCaption})}
+
+
+
+Constructor parametrizado de la clase \doxylink{class_control_parques}{Control\+Parques}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ruta\+Especies} & ruta del archivo que contiene las especies \\
+\hline
+{\em ruta\+Parques} & ruta del archivo que contienen los parques \\
+\hline
+{\em ruta\+Arboles} & ruta del archivo que contiene los arboles \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_control_parques_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_control_parques_a7c62f4b31857a1cb9ccd2377204abce5}\index{ControlParques@{ControlParques}!arbolMasAlto@{arbolMasAlto}}
+\index{arbolMasAlto@{arbolMasAlto}!ControlParques@{ControlParques}}
+\doxysubsubsection{\texorpdfstring{arbolMasAlto()}{arbolMasAlto()}}
+{\footnotesize\ttfamily \label{class_control_parques_a7c62f4b31857a1cb9ccd2377204abce5} 
+\doxymbox{\hyperlink{class_arbol}{Arbol}} \texorpdfstring{$\ast$}{*} Control\+Parques::\+arbol\+Mas\+Alto (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Nos da el arbol mas alto de todos los parques. 
+
+\begin{DoxyReturn}{Returns}
+Arbol\texorpdfstring{$\ast$}{*} puntero al arbol mas alto 
+\end{DoxyReturn}
+\Hypertarget{class_control_parques_a8465eb0098c58e6b5bfb59448809051c}\index{ControlParques@{ControlParques}!buscarArbol@{buscarArbol}}
+\index{buscarArbol@{buscarArbol}!ControlParques@{ControlParques}}
+\doxysubsubsection{\texorpdfstring{buscarArbol()}{buscarArbol()}}
+{\footnotesize\ttfamily \label{class_control_parques_a8465eb0098c58e6b5bfb59448809051c} 
+\doxymbox{\hyperlink{class_arbol}{Arbol}} \texorpdfstring{$\ast$}{*} Control\+Parques::\+buscar\+Arbol (\begin{DoxyParamCaption}\item[{string}]{as\+Num}{}\end{DoxyParamCaption})}
+
+
+
+Busqueda de un arbol dado su. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em as\+Num} & \\
+\hline
+{\em as\+Num} & as\+Num del arbol que buscamos \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Arbol\texorpdfstring{$\ast$}{*} puntero al arbol con
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em as\+Num} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_control_parques_af2e660edc577c440cdb94fab7c454856}\index{ControlParques@{ControlParques}!buscarArbolesPorEspecieYDistrito@{buscarArbolesPorEspecieYDistrito}}
+\index{buscarArbolesPorEspecieYDistrito@{buscarArbolesPorEspecieYDistrito}!ControlParques@{ControlParques}}
+\doxysubsubsection{\texorpdfstring{buscarArbolesPorEspecieYDistrito()}{buscarArbolesPorEspecieYDistrito()}}
+{\footnotesize\ttfamily \label{class_control_parques_af2e660edc577c440cdb94fab7c454856} 
+vector$<$ \doxymbox{\hyperlink{class_arbol}{Arbol}} \texorpdfstring{$\ast$}{*} $>$ Control\+Parques::\+buscar\+Arboles\+Por\+Especie\+YDistrito (\begin{DoxyParamCaption}\item[{const string \&}]{nbre\+Comun}{, }\item[{int}]{num\+Distrito}{}\end{DoxyParamCaption})}
+
+
+
+devuelve un listado de los árboles de una especie dada por su nombre común y que pertenecen a un mismo distrito 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nbre\+Comun} & nombre común del arbol \\
+\hline
+{\em num\+Distrito} & número del distrito \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+vector$<$\+Arbol\texorpdfstring{$\ast$}{*}$>$ vector con arboles del distrito
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em num\+Distrito} & y nombre\\
+\hline
+{\em nbre\+Comun} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_control_parques_a20d01d61b02dc4c6db0a1f3cc570d0f9}\index{ControlParques@{ControlParques}!buscarArbolNcomun@{buscarArbolNcomun}}
+\index{buscarArbolNcomun@{buscarArbolNcomun}!ControlParques@{ControlParques}}
+\doxysubsubsection{\texorpdfstring{buscarArbolNcomun()}{buscarArbolNcomun()}}
+{\footnotesize\ttfamily \label{class_control_parques_a20d01d61b02dc4c6db0a1f3cc570d0f9} 
+vector$<$ \doxymbox{\hyperlink{class_arbol}{Arbol}} \texorpdfstring{$\ast$}{*} $>$ Control\+Parques::\+buscar\+Arbol\+Ncomun (\begin{DoxyParamCaption}\item[{const string \&}]{ncomun}{}\end{DoxyParamCaption})}
+
+
+
+localiza en tiempo óptimo todos los ejemplares de árboles con ese nombre común exacto 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ncomun} & nombre comun del arbol \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+vector$<$\+Arbol\texorpdfstring{$\ast$}{*}$>$ todos los arboles con ese nombre comun exacto 
+\end{DoxyReturn}
+\Hypertarget{class_control_parques_a638f6e756578e865b51ceb46e843b04c}\index{ControlParques@{ControlParques}!buscarArbolNcomunComienzo@{buscarArbolNcomunComienzo}}
+\index{buscarArbolNcomunComienzo@{buscarArbolNcomunComienzo}!ControlParques@{ControlParques}}
+\doxysubsubsection{\texorpdfstring{buscarArbolNcomunComienzo()}{buscarArbolNcomunComienzo()}}
+{\footnotesize\ttfamily \label{class_control_parques_a638f6e756578e865b51ceb46e843b04c} 
+vector$<$ \doxymbox{\hyperlink{class_arbol}{Arbol}} \texorpdfstring{$\ast$}{*} $>$ Control\+Parques::\+buscar\+Arbol\+Ncomun\+Comienzo (\begin{DoxyParamCaption}\item[{const string \&}]{ncomun}{}\end{DoxyParamCaption})}
+
+
+
+localiza en tiempo óptimo todos los ejemplares de árboles dando una palabra del comienzo 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ncomun} & subcadena del nombre comun del arbol \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+vector$<$\+Arbol\texorpdfstring{$\ast$}{*}$>$ todos los arboles con esa subcadena de nombre comun 
+\end{DoxyReturn}
+\Hypertarget{class_control_parques_a7629b4ea1b15f1404dd67015e89bf5d3}\index{ControlParques@{ControlParques}!buscarParque@{buscarParque}}
+\index{buscarParque@{buscarParque}!ControlParques@{ControlParques}}
+\doxysubsubsection{\texorpdfstring{buscarParque()}{buscarParque()}}
+{\footnotesize\ttfamily \label{class_control_parques_a7629b4ea1b15f1404dd67015e89bf5d3} 
+\doxymbox{\hyperlink{class_parque}{Parque}} \texorpdfstring{$\ast$}{*} Control\+Parques::\+buscar\+Parque (\begin{DoxyParamCaption}\item[{const string \&}]{nbre\+\_\+parque}{}\end{DoxyParamCaption})}
+
+
+
+Busqueda de un parque dado su nombre. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nbre\+\_\+parque} & nombre del parque que buscamos \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Parque\texorpdfstring{$\ast$}{*} puntero al parque con nombre
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em nbre\+\_\+parque} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_control_parques_ae5b87651e63c93551c4b2892d69140bc}\index{ControlParques@{ControlParques}!contarArbolesBarrio@{contarArbolesBarrio}}
+\index{contarArbolesBarrio@{contarArbolesBarrio}!ControlParques@{ControlParques}}
+\doxysubsubsection{\texorpdfstring{contarArbolesBarrio()}{contarArbolesBarrio()}}
+{\footnotesize\ttfamily \label{class_control_parques_ae5b87651e63c93551c4b2892d69140bc} 
+int Control\+Parques::\+contar\+Arboles\+Barrio (\begin{DoxyParamCaption}\item[{int}]{num\+\_\+barrio}{}\end{DoxyParamCaption})}
+
+
+
+devuelve el número de árboles que tiene un barrio de Madrid dado su código 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num\+\_\+barrio} & numero del barrio \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int número de arboles en un barrio 
+\end{DoxyReturn}
+\Hypertarget{class_control_parques_a18c5bcf98f5b1ad68d5ae44797650faf}\index{ControlParques@{ControlParques}!contarEspecieParque@{contarEspecieParque}}
+\index{contarEspecieParque@{contarEspecieParque}!ControlParques@{ControlParques}}
+\doxysubsubsection{\texorpdfstring{contarEspecieParque()}{contarEspecieParque()}}
+{\footnotesize\ttfamily \label{class_control_parques_a18c5bcf98f5b1ad68d5ae44797650faf} 
+int Control\+Parques::\+contar\+Especie\+Parque (\begin{DoxyParamCaption}\item[{string}]{ncomun}{}\end{DoxyParamCaption})}
+
+
+
+Cuenta el número de especies que hay en todos los parques dado un nombre comun. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ncomun} & el nombre comun de las especies que queremos contar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int el número de especies con
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em ncomun} & que hay en todos los parques \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_control_parques_a1d013a26c8fbc69cae19ff082490c69d}\index{ControlParques@{ControlParques}!contarEspecies@{contarEspecies}}
+\index{contarEspecies@{contarEspecies}!ControlParques@{ControlParques}}
+\doxysubsubsection{\texorpdfstring{contarEspecies()}{contarEspecies()}}
+{\footnotesize\ttfamily \label{class_control_parques_a1d013a26c8fbc69cae19ff082490c69d} 
+int Control\+Parques::\+contar\+Especies (\begin{DoxyParamCaption}\item[{string}]{nbre\+\_\+parque}{}\end{DoxyParamCaption})}
+
+
+
+Segun el nombre del parque cuenta las especies distintas que tiene. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nbre\+\_\+parque} & nombre del parque \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int número de especies distintas que tiene el parque 
+\end{DoxyReturn}
+\Hypertarget{class_control_parques_a2b15ff83f74fb2674506ae926f052425}\index{ControlParques@{ControlParques}!contarTipos@{contarTipos}}
+\index{contarTipos@{contarTipos}!ControlParques@{ControlParques}}
+\doxysubsubsection{\texorpdfstring{contarTipos()}{contarTipos()}}
+{\footnotesize\ttfamily \label{class_control_parques_a2b15ff83f74fb2674506ae926f052425} 
+int Control\+Parques::\+contar\+Tipos (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Cuenta todos los tipos de especies diferentes alojados en todos los parques. 
+
+\begin{DoxyReturn}{Returns}
+int número de tipos de especies diferentes alojados en todos los parques 
+\end{DoxyReturn}
+\Hypertarget{class_control_parques_ad9e42958eb763c97d06d8377051837fd}\index{ControlParques@{ControlParques}!get\_nbre\_parque@{get\_nbre\_parque}}
+\index{get\_nbre\_parque@{get\_nbre\_parque}!ControlParques@{ControlParques}}
+\doxysubsubsection{\texorpdfstring{get\_nbre\_parque()}{get\_nbre\_parque()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_control_parques_ad9e42958eb763c97d06d8377051837fd} 
+list$<$ \doxymbox{\hyperlink{class_parque}{Parque}} $>$ \& Control\+Parques::\+get\+\_\+nbre\+\_\+parque (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+obtner todos los parques 
+
+\begin{DoxyReturn}{Returns}
+list$<$\+Parque$>$\& Lista Doblemente Enlazada con todos los parques 
+\end{DoxyReturn}
+\Hypertarget{class_control_parques_a05918c5919dd8633d76df853db38973e}\index{ControlParques@{ControlParques}!get\_nbre\_parque@{get\_nbre\_parque}}
+\index{get\_nbre\_parque@{get\_nbre\_parque}!ControlParques@{ControlParques}}
+\doxysubsubsection{\texorpdfstring{get\_nbre\_parque()}{get\_nbre\_parque()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_control_parques_a05918c5919dd8633d76df853db38973e} 
+const list$<$ \doxymbox{\hyperlink{class_parque}{Parque}} $>$ \& Control\+Parques::\+get\+\_\+nbre\+\_\+parque (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+obtner todos los parques 
+
+\begin{DoxyReturn}{Returns}
+const list$<$\+Parque$>$\& Lista Doblemente Enlazada con todos los parques 
+\end{DoxyReturn}
+\Hypertarget{class_control_parques_ac825ba8f5891f0ff61906a8b1953e9e8}\index{ControlParques@{ControlParques}!get\_parks@{get\_parks}}
+\index{get\_parks@{get\_parks}!ControlParques@{ControlParques}}
+\doxysubsubsection{\texorpdfstring{get\_parks()}{get\_parks()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_control_parques_ac825ba8f5891f0ff61906a8b1953e9e8} 
+list$<$ \doxymbox{\hyperlink{class_parque}{Parque}} $>$ \& Control\+Parques::\+get\+\_\+parks (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+obtener todos los parques 
+
+\begin{DoxyReturn}{Returns}
+list$<$\+Parque$>$\& Lista Doblemente Enlazada con todos los parques 
+\end{DoxyReturn}
+\Hypertarget{class_control_parques_a69d9aa2d698c83bfb8ad4457204e9eeb}\index{ControlParques@{ControlParques}!get\_parks@{get\_parks}}
+\index{get\_parks@{get\_parks}!ControlParques@{ControlParques}}
+\doxysubsubsection{\texorpdfstring{get\_parks()}{get\_parks()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_control_parques_a69d9aa2d698c83bfb8ad4457204e9eeb} 
+const list$<$ \doxymbox{\hyperlink{class_parque}{Parque}} $>$ \& Control\+Parques::\+get\+\_\+parks (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+obtener todos los parques 
+
+\begin{DoxyReturn}{Returns}
+const list$<$\+Parque$>$\& Lista Doblemente Enlazada con todos los parques 
+\end{DoxyReturn}
+\Hypertarget{class_control_parques_a6e6cd775746cbd3f4d8e3c6591989cee}\index{ControlParques@{ControlParques}!get\_varieties@{get\_varieties}}
+\index{get\_varieties@{get\_varieties}!ControlParques@{ControlParques}}
+\doxysubsubsection{\texorpdfstring{get\_varieties()}{get\_varieties()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_control_parques_a6e6cd775746cbd3f4d8e3c6591989cee} 
+vector$<$ \doxymbox{\hyperlink{class_especie}{Especie}} $>$ \& Control\+Parques::\+get\+\_\+varieties (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+obtener las especies de todos los parques 
+
+\begin{DoxyReturn}{Returns}
+vector$<$\+Especie$>$\& vector dinamico con todas las especies de todos los parques 
+\end{DoxyReturn}
+\Hypertarget{class_control_parques_add36b9ae7693e6bf9ea1ab72bd665af2}\index{ControlParques@{ControlParques}!get\_varieties@{get\_varieties}}
+\index{get\_varieties@{get\_varieties}!ControlParques@{ControlParques}}
+\doxysubsubsection{\texorpdfstring{get\_varieties()}{get\_varieties()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_control_parques_add36b9ae7693e6bf9ea1ab72bd665af2} 
+const vector$<$ \doxymbox{\hyperlink{class_especie}{Especie}} $>$ \& Control\+Parques::\+get\+\_\+varieties (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+obtener las especies de todos los parques 
+
+\begin{DoxyReturn}{Returns}
+const vector$<$\+Especie$>$\& vector dinamico con todas las especies de todos los parques 
+\end{DoxyReturn}
+\Hypertarget{class_control_parques_a9fbdf02897c8f4ab07921ada19f7988f}\index{ControlParques@{ControlParques}!listaArbParque@{listaArbParque}}
+\index{listaArbParque@{listaArbParque}!ControlParques@{ControlParques}}
+\doxysubsubsection{\texorpdfstring{listaArbParque()}{listaArbParque()}}
+{\footnotesize\ttfamily \label{class_control_parques_a9fbdf02897c8f4ab07921ada19f7988f} 
+vector$<$ \doxymbox{\hyperlink{class_arbol}{Arbol}} \texorpdfstring{$\ast$}{*} $>$ Control\+Parques::\+lista\+Arb\+Parque (\begin{DoxyParamCaption}\item[{string}]{nbre\+\_\+parque}{}\end{DoxyParamCaption})}
+
+
+
+Dado un nombre de un parque genera un vector con todos los arboles que tiene. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nbre\+\_\+parque} & nombre del parque \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+vector$<$\+Arbol\texorpdfstring{$\ast$}{*}$>$ todos los arboles que se encuentran en el parque cuyo nombre es
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em nbre\+\_\+parque} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_control_parques_a6f381d14f617ad0dd9e9b433a579186d}\index{ControlParques@{ControlParques}!listadoEspecieSubNbre@{listadoEspecieSubNbre}}
+\index{listadoEspecieSubNbre@{listadoEspecieSubNbre}!ControlParques@{ControlParques}}
+\doxysubsubsection{\texorpdfstring{listadoEspecieSubNbre()}{listadoEspecieSubNbre()}}
+{\footnotesize\ttfamily \label{class_control_parques_a6f381d14f617ad0dd9e9b433a579186d} 
+vector$<$ \doxymbox{\hyperlink{class_especie}{Especie}} $>$ Control\+Parques::\+listado\+Especie\+Sub\+Nbre (\begin{DoxyParamCaption}\item[{string}]{cadena}{}\end{DoxyParamCaption})}
+
+
+
+Genera un vector de todas las especies con un subnombre especifico. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cadena} & subnombre que buscamos \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+vector$<$\+Especie$>$ Vector de especies con ese subnombre 
+\end{DoxyReturn}
+\Hypertarget{class_control_parques_a3404dbc25702cddf14b84c026761ddd4}\index{ControlParques@{ControlParques}!listarParquesArbol@{listarParquesArbol}}
+\index{listarParquesArbol@{listarParquesArbol}!ControlParques@{ControlParques}}
+\doxysubsubsection{\texorpdfstring{listarParquesArbol()}{listarParquesArbol()}}
+{\footnotesize\ttfamily \label{class_control_parques_a3404dbc25702cddf14b84c026761ddd4} 
+vector$<$ \doxymbox{\hyperlink{class_parque}{Parque}} \texorpdfstring{$\ast$}{*} $>$ Control\+Parques::\+listar\+Parques\+Arbol (\begin{DoxyParamCaption}\item[{const string \&}]{ncomun}{}\end{DoxyParamCaption})}
+
+
+
+devuelve un conjunto de parques que tienen al menos un ejemplar del árbol dado por parámetro mediante su nombre común 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ncomun} & nombre comun del arbol \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+vector$<$\+Parque$>$ conjunto de parques que tiene al menos un ejemplar del árbol dado 
+\end{DoxyReturn}
+\Hypertarget{class_control_parques_af2a1719000770d27c23e34f1da189949}\index{ControlParques@{ControlParques}!numArboles@{numArboles}}
+\index{numArboles@{numArboles}!ControlParques@{ControlParques}}
+\doxysubsubsection{\texorpdfstring{numArboles()}{numArboles()}}
+{\footnotesize\ttfamily \label{class_control_parques_af2a1719000770d27c23e34f1da189949} 
+unsigned int Control\+Parques::\+num\+Arboles (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Devuelve el número de árboles almacenados en el AVL. 
+
+\begin{DoxyReturn}{Returns}
+unsigned int cantidad total de árboles cargados. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files:\+\begin{DoxyCompactItemize}
+\item 
+Control\+Parques.\+h\item 
+Control\+Parques.\+cpp\end{DoxyCompactItemize}

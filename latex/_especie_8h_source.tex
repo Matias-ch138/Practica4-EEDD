@@ -1,0 +1,78 @@
+\doxysection{Especie.\+h}
+\hypertarget{_especie_8h_source}{}\label{_especie_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ ESPECIE\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ ESPECIE\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00006\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{keyword}{enum}\ TipoPlanta\ \{}
+\DoxyCodeLine{00009\ \ \ \ \ ARBUSTO,}
+\DoxyCodeLine{00010\ \ \ \ \ CONIFERA,}
+\DoxyCodeLine{00011\ \ \ \ \ PALMACEA,}
+\DoxyCodeLine{00012\ \ \ \ \ HERB\_PERENNES,}
+\DoxyCodeLine{00013\ \ \ \ \ FRONDOSA,}
+\DoxyCodeLine{00014\ \ \ \ \ TAPIZANTE\_TREPADORA,}
+\DoxyCodeLine{00015\ \ \ \ \ CACTACEA\_SUCULENTA,}
+\DoxyCodeLine{00016\ \ \ \ \ SUBTROPICAL\_TROPICAL,}
+\DoxyCodeLine{00017\ \ \ \ \ HERB\_ANUAL,}
+\DoxyCodeLine{00018\ \ \ \ \ HERB\_ANUALES,}
+\DoxyCodeLine{00019\ \ \ \ \ OTRO}
+\DoxyCodeLine{00020\ \};}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \textcolor{keyword}{class\ }Especie\ \{}
+\DoxyCodeLine{00023\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{string}\ codigoEspecie\_;}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{string}\ nombreComun\_;}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{string}\ nombreCientifico\_;}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{string}\ tipoPlanta\_;}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00030\ \ \ \ \ Especie()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00031\ \ \ \ \ Especie(\textcolor{keywordtype}{string}\ codigoEspecie,\ \textcolor{keywordtype}{string}\ nombreComun,\ \textcolor{keywordtype}{string}\ nombreCientifico,\ \textcolor{keywordtype}{string}\ tipoPlanta)\ \{}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ codigoEspecie\_\ =\ codigoEspecie;}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ nombreComun\_\ =\ nombreComun;}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ nombreCientifico\_\ =\ nombreCientifico;}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ tipoPlanta\_\ =\ tipoPlanta;}
+\DoxyCodeLine{00036\ \ \ \ \ \}}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{comment}{//\ Getters\ y\ setters\ }}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{string}\ \doxymbox{\hyperlink{class_especie_a240c987cf0b19e98563b9ddf340a0f0c}{getcodigo\_especie}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_especie_a2a42d4f6a598d2a84c89501dd1fe24a5}{set\_codigo\_especie}}(\textcolor{keywordtype}{string}\ codigoEspecie);}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{string}\ \doxymbox{\hyperlink{class_especie_a32815b27fc5025eebce1fc720ae5b32d}{getnombre\_comun}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_especie_a2c5f5318011574ec9ef98ec640da3987}{setNombreComun}}(\textcolor{keywordtype}{string}\ nombreComun);}
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordtype}{string}\ \doxymbox{\hyperlink{class_especie_a62da4bb8ddd790f581a5186e1f79cc8d}{getnombre\_cientifico}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_especie_aa5bd21d0bad293712d6c0418519cc666}{setNombreCientifico}}(\textcolor{keywordtype}{string}\ nombreCientifico);}
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordtype}{string}\ \doxymbox{\hyperlink{class_especie_a0883777d0544f05120d5c36277eb4df0}{gettipo\_planta}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_especie_a992be0476e7d6345601bb8a5374bb11b}{setTipoPlanta}}(\textcolor{keywordtype}{string}\ tipoPlanta);}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{comment}{//\ Alias\ para\ que\ coincida\ con\ el\ uso\ de\ main.cpp\ }}
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordtype}{string}\ get\_codigo\_especie()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keywordtype}{string}\ get\_nombre\_comun()\ \textcolor{keyword}{const};\ }
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keywordtype}{string}\ get\_nombre\_cientifico()\textcolor{keyword}{const};}
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keywordtype}{string}\ get\_tipo\_planta\_str()\textcolor{keyword}{const};}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keywordtype}{int}\ get\_tipo\_planta()\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (tipoPlanta\_\ ==\ \textcolor{stringliteral}{"{}ARBUSTO"{}})\ \textcolor{keywordflow}{return}\ ARBUSTO;}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (tipoPlanta\_\ ==\ \textcolor{stringliteral}{"{}CONIFERA"{}})\ \textcolor{keywordflow}{return}\ CONIFERA;}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (tipoPlanta\_\ ==\ \textcolor{stringliteral}{"{}PALMACEA"{}})\ \textcolor{keywordflow}{return}\ PALMACEA;}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (tipoPlanta\_\ ==\ \textcolor{stringliteral}{"{}HERB\_PERENNES"{}})\ \textcolor{keywordflow}{return}\ HERB\_PERENNES;}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (tipoPlanta\_\ ==\ \textcolor{stringliteral}{"{}FRONDOSA"{}})\ \textcolor{keywordflow}{return}\ FRONDOSA;}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (tipoPlanta\_\ ==\ \textcolor{stringliteral}{"{}TAPIZANTE\_TREPADORA"{}}\ ||\ tipoPlanta\_\ ==\ \textcolor{stringliteral}{"{}TAPIZANTE/TREPADORA"{}})\ \textcolor{keywordflow}{return}\ TAPIZANTE\_TREPADORA;}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (tipoPlanta\_\ ==\ \textcolor{stringliteral}{"{}CACTACEA\_SUCULENTA"{}}\ ||\ tipoPlanta\_\ ==\ \textcolor{stringliteral}{"{}CACTACEA/SUCULENTA"{}})\ \textcolor{keywordflow}{return}\ CACTACEA\_SUCULENTA;}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (tipoPlanta\_\ ==\ \textcolor{stringliteral}{"{}SUBTROPICAL\_TROPICAL"{}}\ ||\ tipoPlanta\_\ ==\ \textcolor{stringliteral}{"{}SUBTROPICAL/TROPICAL"{}})\ \textcolor{keywordflow}{return}\ SUBTROPICAL\_TROPICAL;}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (tipoPlanta\_\ ==\ \textcolor{stringliteral}{"{}HERB\_ANUAL"{}})\ \textcolor{keywordflow}{return}\ HERB\_ANUAL;}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (tipoPlanta\_\ ==\ \textcolor{stringliteral}{"{}HERB\_ANUALES"{}})\ \textcolor{keywordflow}{return}\ HERB\_ANUALES;}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ OTRO;}
+\DoxyCodeLine{00066\ \ \ \ \ \}}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00068\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_especie_aa4375294d202f16263e8d6a845218ad0}{mostrarInfo}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_especie_a53a517dcd05021d86023ee6146a1a335}{operator<}}(\textcolor{keyword}{const}\ Especie\&\ origen)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00070\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_especie_a6ca725fe8235f46d06fdb3c73a0b392e}{operator==}}(\textcolor{keyword}{const}\ Especie\&\ origen)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00071\ \};}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00073\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

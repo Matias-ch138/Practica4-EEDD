@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['controlparques_0',['ControlParques',['../classControlParques.html',1,'']]]
+  ['controlparques_0',['ControlParques',['../class_control_parques.html',1,'']]]
 ];

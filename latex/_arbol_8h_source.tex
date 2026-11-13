@@ -1,0 +1,76 @@
+\doxysection{Arbol.\+h}
+\hypertarget{_arbol_8h_source}{}\label{_arbol_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ Arbol\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ Arbol\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}Especie.h"{}}}
+\DoxyCodeLine{00007\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_parque}{Parque}};}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_arbol_a929f4a2d3ee371044c46f85374c43792}{Arbol}}\ \{}
+\DoxyCodeLine{00012\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keywordtype}{string}\ assetnum\_;}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keywordtype}{int}\ num\_parque\_;}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keywordtype}{int}\ num\_distrito\_;}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keywordtype}{string}\ nbre\_distrito\_;}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{int}\ num\_barrio\_;}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{string}\ nbre\_barrio\_;}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{double}\ X\_;}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{double}\ Y\_;}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{float}\ perimetro\_;}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{float}\ altura\_;}
+\DoxyCodeLine{00023\ \ \ \ \ \doxymbox{\hyperlink{class_especie}{Especie}}*\ especieAsociada\_;}
+\DoxyCodeLine{00024\ \ \ \ \ \doxymbox{\hyperlink{class_parque}{Parque}}*\ isInto\_;}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00027\ \ \ \ \ \doxymbox{\hyperlink{class_arbol_a4f5d3e25a0e1a40cb09cefa39378b7be}{Arbol}}(\textcolor{keywordtype}{string}\ assetnum,\ \textcolor{keywordtype}{int}\ num\_parque,\ \textcolor{keywordtype}{int}\ num\_distrito,\ \textcolor{keywordtype}{string}\ nbre\_distrito,\ }
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ num\_barrio,\ \textcolor{keywordtype}{string}\ nbre\_barrio,\ \textcolor{keywordtype}{double}\ X,\ \textcolor{keywordtype}{double}\ Y,\ }
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ perimetro,\ \textcolor{keywordtype}{float}\ altura);}
+\DoxyCodeLine{00030\ \ \ \ \ \doxymbox{\hyperlink{class_arbol_a4f5d3e25a0e1a40cb09cefa39378b7be}{Arbol}}();}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{string}\ \doxymbox{\hyperlink{class_arbol_a0969fadf8456e98d0515256ea28e6ff5}{get\_assetnum}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{class_arbol_ab1def4317d28271911466a1d4969f5b8}{get\_num\_parque}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{class_arbol_a9e0ce785dfca5e4eccaf973c8e27c33d}{get\_num\_distrito}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{string}\ \doxymbox{\hyperlink{class_arbol_a39ef73d83e739c32bae192abe58d5e3f}{get\_nbre\_distrito}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{class_arbol_a43e24779e60366b6dd8a27a01a8d89a8}{get\_num\_barrio}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{string}\ \doxymbox{\hyperlink{class_arbol_a0c75bedbb69cf2cfd94edefe71ba91fe}{get\_nbre\_barrio}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{double}\ \doxymbox{\hyperlink{class_arbol_afa39d4c8d2b6d10e87950467ad44f516}{get\_X}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{double}\ \doxymbox{\hyperlink{class_arbol_af6a68acd4784287c1b25a3e6102d43e8}{get\_Y}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{float}\ \doxymbox{\hyperlink{class_arbol_a5f414f9be9435c0409b25911bb10bd27}{get\_perimetro}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{float}\ \doxymbox{\hyperlink{class_arbol_a04a7ffe491022a30f778a4551315f3f3}{get\_altura}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{comment}{//\ -\/-\/-\/\ SETTERS\ -\/-\/-\/}}
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_arbol_a4eb53c556ec2a0a8837c98c5afd2afce}{set\_assetnum}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ assetnum);\ \textcolor{comment}{//\ Corregido:\ faltaba\ el\ parámetro}}
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_arbol_a2a023884b109d2ab6023294f41e66b52}{set\_num\_parque}}(\textcolor{keywordtype}{int}\ num\_parque);}
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_arbol_a9a98d16ffa13766b98393f053ea782e6}{set\_num\_distrito}}(\textcolor{keywordtype}{int}\ num\_distrito);}
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_arbol_ab9662d3714f002fc37b0d1525e54b140}{set\_nbre\_distrito}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ nbre\_distrito);}
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_arbol_a8b6ec6c0e2bc3c4d8b1c4ddf422a9a6f}{set\_num\_barrio}}(\textcolor{keywordtype}{int}\ num\_barrio);}
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_arbol_a5e8efd08ffc7007a429586d8d89dc379}{set\_nbre\_barrio}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ nbre\_barrio);}
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_arbol_aa3c6f83f939a86ba4da4b9f50b0623ab}{set\_X}}(\textcolor{keywordtype}{double}\ X);}
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_arbol_a8ba2e2dbb195c44747e4261a54aa2004}{set\_Y}}(\textcolor{keywordtype}{double}\ Y);}
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_arbol_abb69cd2f6bceb8fda056bc193945557f}{set\_perimetro}}(\textcolor{keywordtype}{float}\ perimetro);}
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_arbol_a67086faf4cbe5cf08de1900148b8c846}{set\_altura}}(\textcolor{keywordtype}{float}\ altura);}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{comment}{//\ -\/-\/-\/\ MÉTODOS\ DE\ ESPECIE\ -\/-\/-\/}}
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_arbol_a5ed0d00d048422470de6ce739cbc1d19}{setEspecie}}(\doxymbox{\hyperlink{class_especie}{Especie}}*\ e);}
+\DoxyCodeLine{00057\ \ \ \ \ \doxymbox{\hyperlink{class_especie}{Especie}}*\ \doxymbox{\hyperlink{class_arbol_ae8c7b144b333e644688de8a3a8d170b0}{getEspecie}}();}
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keywordtype}{string}\ \doxymbox{\hyperlink{class_arbol_ab17d9bac4b6016296e7a11defb7f36ee}{getCodEspecie}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keywordtype}{string}\ \doxymbox{\hyperlink{class_arbol_a1c35e157fdb96c1a21cfb185f153c1fe}{getTipoEspecie}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keywordtype}{string}\ \doxymbox{\hyperlink{class_arbol_a6292c6abac2ebf42579386bc223efe08}{getNbreComun}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keywordtype}{string}\ \doxymbox{\hyperlink{class_arbol_a485bf73a85c5280461070282329f9e17}{getNbreCientifico}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{comment}{//\ -\/-\/-\/\ OPERADORES\ -\/-\/-\/}}
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_arbol_a28ee69b1ee64c0cb0c6c419cf87cf249}{operator<}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_arbol_a929f4a2d3ee371044c46f85374c43792}{Arbol}}\&\ otro)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_arbol_a981571cecf40ce5366a30fb52c23b114}{operator==}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_arbol_a929f4a2d3ee371044c46f85374c43792}{Arbol}}\&\ otro)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_arbol_a69a5686cffc5b58588b5aeadb7598571}{setParque}}(\doxymbox{\hyperlink{class_parque}{Parque}}*\ p);}
+\DoxyCodeLine{00068\ \ \ \ \ \doxymbox{\hyperlink{class_parque}{Parque}}*\ \doxymbox{\hyperlink{class_arbol_abdfd03533d180b768e8c6d88bd0e977b}{getParque}}();}
+\DoxyCodeLine{00069\ \};}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00071\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}
